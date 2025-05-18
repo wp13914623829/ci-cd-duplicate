@@ -1,3 +1,4 @@
+# .github/workflows/ci_cd_pipeline.yml
 name: CI/CD Pipeline
 
 on:
@@ -13,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3s
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v3
-        wit
+        with:
           python-version: '3.x'
 
       - name: Install dependencies
